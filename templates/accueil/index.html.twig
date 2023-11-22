@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .img { width : 350px}
+</style>
+<a href="{{ path('app_home') }}"> Back </a>
+<a href="{{ path('app_burger') }}"> Burger </a>
+
+<div class="example-wrapper">
+    <img class="img" src="../src/assets/mich.jpg">
+</div>
+{% endblock %}
