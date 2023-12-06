@@ -13,6 +13,15 @@ class BurgerFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
 
+        $burger = new Burger();
+        $burger->sauce = 'Blanche';
+        $burger->oignon = 'Rouge';
+        $burger->commentaire = 'Bof';
+        $burger->pain = 'Blanc';
+        $manager->persist($burger);
+        $this->addReference(self::BURGER_REFERENCE . '_' . $burger);
+
+    $manager->flush();
     }
 }
 
